@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Success!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/success.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/now-ui-kit.css') }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-transparent">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="{{ url_for('static',filename='styles/menuIcon.svg') }}" width="20px" height="20px" style="max-width: none !important;">
+  </button>
+  <img src="{{ url_for('static',filename='styles/image.png') }}" width="50" height="50">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../commands">Commands</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../faq">FAQ</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+<div class="page-content">
+    <div class="form-v4-content">
+        <div class="form-left">
+            <br>
+            <br>
+            <svg viewBox="0 0 76 76" class="success-message__icon icon-checkmark">
+                <circle cx="38" cy="38" r="36"/>
+                <path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M17.7,40.9l10.9,10.9l28.7-28.7"/>
+            </svg>
+            <br>
+            <br>
+            <br>
+            <h1 class="success-message__title">Added Pancake!</h1>
+            <br>
+        </div>
+    </div>
+</div>
+
+<!-- partial:index.partial.html -->
+<!-- partial -->
+  <script  src="{{ url_for('static',filename='styles/success.js') }}"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="{{ url_for('static',filename='styles/now-ui-kit.min.js') }}"></script>
+
+</body>
+</html>
